@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Links } from "../components/Links";
+import Headline from "@/components/Headline";
 // import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
@@ -16,24 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>pages/about.js</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By about
-            </a>
-          </div>
-        </div>
-
-        <div className={styles.center}>about page</div>
-
+        <Headline page="about" />
         <Links />
       </main>
     </>
